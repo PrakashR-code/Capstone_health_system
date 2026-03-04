@@ -1,0 +1,58 @@
+{
+    "model_name": "Claim Outcome Classification Model",
+    "model_type": "RandomForestClassifier",
+    "target_variable": "claim_status",
+    "features": [
+        {
+            "name": "billed_amount",
+            "type": "numeric"
+        },
+        {
+            "name": "approved_amount",
+            "type": "numeric"
+        },
+        {
+            "name": "payment_days",
+            "type": "numeric"
+        },
+        {
+            "name": "length_of_stay_hours",
+            "type": "numeric"
+        },
+        {
+            "name": "visit_frequency",
+            "type": "numeric"
+        },
+        {
+            "name": "avg_los_per_patient",
+            "type": "numeric"
+        },
+        {
+            "name": "provider_rejection_rate",
+            "type": "numeric"
+        },
+        {
+            "name": "age",
+            "type": "numeric"
+        },
+        {
+            "name": "chronic_flag",
+            "type": "numeric"
+        }
+    ],
+    "class_labels": [
+        "Rejected",
+        "Pending",
+        "Paid"
+    ],
+    "preprocessing": {
+        "missing_value_strategy": "Numerical features filled with 0",
+        "scaling_required_for_logistic_regression": true,
+        "scaling_required_for_random_forest": false
+    },
+    "train_test_split": {
+        "method": "Time-based split",
+        "training_percentage": 80,
+        "testing_percentage": 20
+    }
+}

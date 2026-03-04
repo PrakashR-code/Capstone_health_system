@@ -1,0 +1,87 @@
+{
+    "model_name": "Visit Risk Classification Model",
+    "model_type": "RandomForestClassifier",
+    "target_variable": "risk_score",
+    "features": [
+        {
+            "name": "age",
+            "type": "numeric"
+        },
+        {
+            "name": "chronic_flag",
+            "type": "numeric"
+        },
+        {
+            "name": "length_of_stay_hours",
+            "type": "numeric"
+        },
+        {
+            "name": "visit_frequency",
+            "type": "numeric"
+        },
+        {
+            "name": "avg_los_per_patient",
+            "type": "numeric"
+        },
+        {
+            "name": "provider_rejection_rate",
+            "type": "numeric"
+        },
+        {
+            "name": "days_since_registration",
+            "type": "numeric"
+        },
+        {
+            "name": "visit_month",
+            "type": "numeric"
+        },
+        {
+            "name": "visit_dayofweek",
+            "type": "numeric"
+        },
+        {
+            "name": "department_ER",
+            "type": "numeric"
+        },
+        {
+            "name": "department_General",
+            "type": "numeric"
+        },
+        {
+            "name": "department_ICU",
+            "type": "numeric"
+        },
+        {
+            "name": "department_Neurology",
+            "type": "numeric"
+        },
+        {
+            "name": "department_Orthopedics",
+            "type": "numeric"
+        },
+        {
+            "name": "visit_type_ICU",
+            "type": "numeric"
+        },
+        {
+            "name": "visit_type_OPD",
+            "type": "numeric"
+        }
+    ],
+    "class_labels": [
+        "High",
+        "Medium",
+        "Low"
+    ],
+    "preprocessing": {
+        "missing_value_strategy": "Numerical features filled with 0",
+        "categorical_encoding": "One-hot encoding (department, visit_type)",
+        "scaling_required_for_logistic_regression": true,
+        "scaling_required_for_random_forest": false
+    },
+    "train_test_split": {
+        "method": "Time-based split",
+        "training_percentage": 80,
+        "testing_percentage": 20
+    }
+}

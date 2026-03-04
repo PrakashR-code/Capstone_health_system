@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Data and Models (too large for standard GitHub)
+*.csv
+*.pkl
+*.joblib
+
+# Environment and IDE
+.vscode/
+venv/
+env/
