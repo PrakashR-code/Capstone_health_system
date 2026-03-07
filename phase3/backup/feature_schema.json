@@ -1,0 +1,24 @@
+{
+    "risk_model_features": [
+        "age",
+        "chronic_flag",
+        "length_of_stay_hours",
+        "visit_frequency",
+        "avg_los_per_patient",
+        "provider_rejection_rate",
+        "days_since_registration",
+        "visit_month",
+        "visit_dayofweek"
+    ],
+    "claim_model_features": [
+        "billed_amount",
+        "approved_amount",
+        "payment_days",
+        "length_of_stay_hours",
+        "visit_frequency",
+        "avg_los_per_patient",
+        "provider_rejection_rate",
+        "age",
+        "chronic_flag"
+    ]
+}
