@@ -1,0 +1,13 @@
+model,type,feature,train_mean,new_mean,difference,drift_detected
+risk_model,feature_drift,avg_los_per_patient,19.551583599999997,0.7,18.851583599999998,True
+risk_model,feature_drift,provider_rejection_rate,0.15187999999999993,0.9,0.7481200000000001,True
+risk_model,feature_drift,age,44.76832,50.0,5.231679999999997,True
+risk_model,feature_drift,visit_month,6.52036,65.0,58.47964,True
+risk_model,feature_drift,chronic_flag,0.5026,1.0,0.49739999999999995,True
+risk_model,feature_drift,days_since_registration,2.96436,100.0,97.03564,True
+risk_model,feature_drift,visit_dayofweek,3.0,6.0,3.0,True
+risk_model,feature_drift,length_of_stay_hours,19.551583599999997,70.0,50.4484164,True
+risk_model,feature_drift,visit_frequency,5.96088,34.0,28.03912,True
+risk_model,prediction_distribution,Low,NA,1.0,NA,monitor_only
+claim_model,prediction_distribution,Paid,NA,0.75,NA,monitor_only
+claim_model,prediction_distribution,Rejected,NA,0.25,NA,monitor_only
