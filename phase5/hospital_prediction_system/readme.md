@@ -216,6 +216,7 @@ Example request:
 ```json
 {
  "age": 60,
+ "gender": "M",
  "chronic_flag": 1,
  "length_of_stay_hours": 24,
  "visit_frequency": 5,
@@ -241,11 +242,20 @@ Example request:
 
 ```json
 {
+ "age": 45,
+ "gender": "F",
+ "chronic_flag": 1,
+ "department": "General",
+ "visit_type": "OPD",
+ "length_of_stay_hours": 12.5,
+ "visit_frequency": 2,
+ "avg_los_per_patient": 10.0,
+ "provider_rejection_rate": 0.05,
+ "days_since_registration": 365,
+ "billed_amount": 15000
  "billed_amount": 15000,
  "approved_amount": 12000,
- "payment_days": 25,
- "department": "General",
- "visit_type": "OPD"
+ "payment_days": 25
 }
 ```
 

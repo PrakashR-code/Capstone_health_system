@@ -1,0 +1,49 @@
+{
+    "model_name": "hospital_prediction_model",
+    "features": {
+        "age": {
+            "dtype": "numeric"
+        },
+        "gender": {
+            "dtype": "category",
+            "values": [
+                "F",
+                "M"
+            ]
+        },
+        "department": {
+            "dtype": "category",
+            "values": [
+                "Cardiology",
+                "ER",
+                "General",
+                "ICU",
+                "Neurology",
+                "Orthopedics"
+            ]
+        },
+        "visit_type": {
+            "dtype": "category",
+            "values": [
+                "ER",
+                "ICU",
+                "OPD"
+            ]
+        },
+        "chronic_flag": {
+            "dtype": "numeric"
+        },
+        "length_of_stay_hours": {
+            "dtype": "numeric"
+        },
+        "visit_frequency": {
+            "dtype": "numeric"
+        },
+        "avg_los_per_patient": {
+            "dtype": "numeric"
+        },
+        "days_since_registration": {
+            "dtype": "numeric"
+        }
+    }
+}
