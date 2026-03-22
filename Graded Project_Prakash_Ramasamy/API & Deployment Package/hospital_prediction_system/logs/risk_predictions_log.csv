@@ -1,0 +1,2 @@
+timestamp,prediction,age,gender,department,visit_type,chronic_flag,length_of_stay_hours,visit_frequency,avg_los_per_patient,days_since_registration,billed_amount,age_group
+2026-03-21 20:07:24.821950,Low,98,F,Cardiology,ICU,1,1000.0,100.0,1.0,2000,100000.0,Senior

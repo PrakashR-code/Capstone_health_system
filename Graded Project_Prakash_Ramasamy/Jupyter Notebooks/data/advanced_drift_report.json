@@ -1,0 +1,209 @@
+{
+    "visit_id": {
+        "type": "numeric",
+        "ref_mean": 12500.5,
+        "curr_mean": 12500.5,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "patient_id": {
+        "type": "numeric",
+        "ref_mean": 2509.51536,
+        "curr_mean": 2509.51536,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "length_of_stay_hours": {
+        "type": "numeric",
+        "ref_mean": 19.551583599999997,
+        "curr_mean": 19.551583599999997,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "doctor_id": {
+        "type": "numeric",
+        "ref_mean": 150.1724,
+        "curr_mean": 150.1724,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "age": {
+        "type": "numeric",
+        "ref_mean": 44.76832,
+        "curr_mean": 44.76832,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "chronic_flag": {
+        "type": "numeric",
+        "ref_mean": 0.5026,
+        "curr_mean": 0.5026,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "bill_id": {
+        "type": "numeric",
+        "ref_mean": 12500.5,
+        "curr_mean": 12500.5,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "billed_amount": {
+        "type": "numeric",
+        "ref_mean": 20870.757442,
+        "curr_mean": 20870.757442,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "approved_amount": {
+        "type": "numeric",
+        "ref_mean": 16348.107776792502,
+        "curr_mean": 16348.107776792502,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "payment_days": {
+        "type": "numeric",
+        "ref_mean": 13.048079306071871,
+        "curr_mean": 13.048079306071871,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "days_since_registration": {
+        "type": "numeric",
+        "ref_mean": 2.96436,
+        "curr_mean": 2.96436,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "visit_month": {
+        "type": "numeric",
+        "ref_mean": 6.52036,
+        "curr_mean": 6.52036,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "visit_dayofweek": {
+        "type": "numeric",
+        "ref_mean": 3.0,
+        "curr_mean": 3.0,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "approval_ratio": {
+        "type": "numeric",
+        "ref_mean": 0.7318223312370141,
+        "curr_mean": 0.7318223312370141,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "payment_delay_flag": {
+        "type": "numeric",
+        "ref_mean": 0.02036,
+        "curr_mean": 0.02036,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "visit_frequency": {
+        "type": "numeric",
+        "ref_mean": 5.96088,
+        "curr_mean": 5.96088,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "avg_los_per_patient": {
+        "type": "numeric",
+        "ref_mean": 19.551583599999997,
+        "curr_mean": 19.551583599999997,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "is_rejected": {
+        "type": "numeric",
+        "ref_mean": 0.15188,
+        "curr_mean": 0.15188,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "provider_rejection_rate": {
+        "type": "numeric",
+        "ref_mean": 0.15187999999999993,
+        "curr_mean": 0.15187999999999993,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "visit_intensity": {
+        "type": "numeric",
+        "ref_mean": 0.0261237805986233,
+        "curr_mean": 0.0261237805986233,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "dept_high_risk_rate": {
+        "type": "numeric",
+        "ref_mean": 0.20135999999999996,
+        "curr_mean": 0.20135999999999996,
+        "deviation": 0.0,
+        "status": "Stable"
+    },
+    "visit_date": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "department": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "visit_type": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "risk_score": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "gender": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "city": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "insurance_provider": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "registration_date": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "claim_status": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "billing_date": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "age_group": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    },
+    "los_category": {
+        "type": "categorical",
+        "status": "Stable",
+        "new_categories": []
+    }
+}

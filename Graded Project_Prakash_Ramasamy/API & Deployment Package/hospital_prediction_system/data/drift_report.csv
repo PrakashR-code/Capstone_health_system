@@ -1,0 +1,10 @@
+model,type,feature,train_mean,new_mean,difference,drift_detected
+risk_model,feature_drift,age,44.76832,98.0,53.23168,True
+risk_model,feature_drift,days_since_registration,2.96436,2000.0,1997.03564,True
+risk_model,feature_drift,chronic_flag,0.5026,1.0,0.49739999999999995,True
+risk_model,feature_drift,length_of_stay_hours,19.551583599999997,1000.0,980.4484164,True
+risk_model,feature_drift,billed_amount,20870.757442,100000.0,79129.242558,True
+risk_model,feature_drift,avg_los_per_patient,19.551583599999997,1.0,18.551583599999997,True
+risk_model,feature_drift,visit_frequency,5.96088,100.0,94.03912,True
+risk_model,prediction_distribution,Low,NA,1.0,NA,monitor_only
+claim_model,prediction_distribution,Paid,NA,1.0,NA,monitor_only

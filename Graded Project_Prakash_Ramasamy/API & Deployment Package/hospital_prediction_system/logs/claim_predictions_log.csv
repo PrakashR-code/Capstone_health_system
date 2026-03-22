@@ -1,0 +1,4 @@
+timestamp,prediction,age,gender,department,visit_type,length_of_stay_hours,visit_frequency,chronic_flag,provider_rejection_rate,visit_intensity,billed_amount
+2026-03-21 20:06:58.537494,Paid,100,M,Cardiology,ICU,100.0,19.0,1,10.0,0.1,1000000000.0
+2026-03-21 20:07:07.455911,Paid,100,F,ICU,ICU,100.0,19.0,1,10.0,0.1,1000000000.0
+2026-03-21 20:07:19.191032,Paid,100,F,ICU,ICU,100.0,19.0,1,100.0,10.0,1000000000.0
