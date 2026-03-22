@@ -1,10 +1,32 @@
+"""
+ui.py — Gradio Web Interface
+
+Hospital Risk & Claim Intelligence Platform — User-Facing Dashboard
+--------------------------------------------------------------------
+Provides a browser-based UI that calls the FastAPI prediction endpoints.
+
+Two tabs:
+  Risk Prediction  — Sends 10 clinical features to /predict_risk
+                     Returns: Low | Medium | High risk
+  Claim Prediction — Sends 10 billing/clinical features to /predict_claim
+                     Returns: Paid | Pending | Rejected
+
+The API server (main.py) must be running on port 8000 before launching this UI.
+"""
+
 import gradio as gr
 import requests
 
-RISK_API = "http://127.0.0.1:8000/predict_risk"
+# Base URLs for the prediction endpoints (assumes API runs on same host)
+RISK_API  = "http://127.0.0.1:8000/predict_risk"
 CLAIM_API = "http://127.0.0.1:8000/predict_claim"
 
 def safe_call(api, payload):
+    """POST payload to the given API URL and extract the prediction string.
+
+    Returns the prediction label on success, or an error message string
+    if the request fails (network error, bad status, malformed JSON).
+    """
     r = requests.post(api, json=payload)
     try:
         return r.json()["prediction"]
@@ -14,6 +36,10 @@ def safe_call(api, payload):
 
 
 def predict_risk(age, gender, department, visit_type, chronic_flag, length_of_stay_hours, visit_frequency, avg_los_per_patient, days_since_registration, billed_amount):
+    """Collect risk tab inputs, build payload, and call /predict_risk.
+
+    age_group is NOT included here; the API derives it from age automatically.
+    """
     payload = {
         "age": int(age),
         "gender": gender,
@@ -32,6 +58,10 @@ def predict_risk(age, gender, department, visit_type, chronic_flag, length_of_st
 
 # UPDATED CLAIM FUNCTION
 def predict_claim(age, gender, dept, vtype, los, freq, chronic_flag, rejection_rate, visit_intensity_val, billed_amount):
+    """Collect claim tab inputs, build payload, and call /predict_claim.
+
+    The API handles categorical encoding server-side via utils.prepare_features().
+    """
     payload = {
         "age": int(age),
         "gender": gender,
