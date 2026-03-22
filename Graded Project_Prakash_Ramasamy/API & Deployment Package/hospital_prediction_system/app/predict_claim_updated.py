@@ -22,7 +22,7 @@ model = joblib.load("../models/claim_model.pkl")
 
 
 
-# ✅ CORRECT SAMPLE INPUT (ONLY VALID FEATURES)
+# CORRECT SAMPLE INPUT (ONLY VALID FEATURES)
 test = {
     "age": 45,
     "gender": "F",
